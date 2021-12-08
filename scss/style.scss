@@ -7,3 +7,81 @@ $gris: #e1e1cd;
 
 $font-title: "Poppins", sans-serif;
 $font-text: "Open Sans", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font-text;
+}
+
+/*--------------HEADER-----------*/
+.search-custom {
+  background-color: $verde;
+}
+.search-custom::placeholder {
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: $gris;
+}
+
+.dropdown-item:hover {
+  background-color: $verde;
+  color: white;
+}
+
+/*--------------END HEADER-----------*/
+
+main {
+  h1 {
+    font-family: $font-title;
+    font-weight: 700;
+    color: $verde;
+  }
+}
+
+/*------------CARDS-------------*/
+.card-title {
+  color: $verde;
+  text-transform: uppercase;
+  font-family: $font-title;
+  font-weight: 600;
+}
+
+.cont-img-comprar {
+  .boton-compra-rapida {
+    background-color: $amarillo;
+    position: absolute;
+    top: 25%;
+    opacity: 0;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+.cont-img-comprar:hover {
+  .boton-compra-rapida {
+    opacity: 1;
+  }
+}
+
+/*------------END CARDS-------------*/
+
+/*--------------FOOTER-----------*/
+footer {
+  background-color: $gris;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    color: $verde;
+  }
+
+  .informacion-footer {
+    font-weight: bolder;
+  }
+}
+/*--------------END FOOTER-----------*/
