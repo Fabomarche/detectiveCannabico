@@ -49,6 +49,54 @@ main h1 {
   filter: blur(1.5px); }
 
 /*------------END CARDS-------------*/
+/*------------DETAIL-------------*/
+.detail-title {
+  color: #4e9339;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; }
+
+.detail-price {
+  font-size: 1.5rem;
+  font-weight: 600; }
+
+.link-detalles {
+  text-decoration: none;
+  color: #4e9339; }
+
+.link-detalles:hover {
+  color: #4e9339;
+  font-weight: bold; }
+
+.detail-form label {
+  font-weight: bold; }
+
+.detail-form select {
+  border: 1px solid #4e9339; }
+
+.contador {
+  display: flex;
+  align-items: flex-start; }
+  .contador p {
+    font-weight: 800;
+    font-size: 1.5rem; }
+  .contador button {
+    background-color: #4e9339;
+    color: white;
+    border-radius: 100%;
+    padding: 0.25rem 0.75rem;
+    font-weight: 800;
+    font-size: 1rem; }
+
+.boton-aniadir, .boton-comprar {
+  background-color: #4e9339;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.boton-comprar {
+  background-color: #fedf3f; }
+
+/*------------END DETAIL-------------*/
 /*--------------FOOTER-----------*/
 footer {
   background-color: #e1e1cd; }

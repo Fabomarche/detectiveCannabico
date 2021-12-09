@@ -73,6 +73,61 @@ main {
 
 /*------------END CARDS-------------*/
 
+/*------------DETAIL-------------*/
+.detail-title {
+  color: $verde;
+  text-transform: uppercase;
+  font-family: $font-title;
+  font-weight: 600;
+}
+.detail-price {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.link-detalles {
+  text-decoration: none;
+  color: $verde;
+}
+.link-detalles:hover {
+  color: $verde;
+  font-weight: bold;
+}
+.detail-form {
+  label {
+    font-weight: bold;
+  }
+  select {
+    border: 1px solid $verde;
+  }
+}
+.contador {
+  display: flex;
+  align-items: flex-start;
+  p {
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  button {
+    background-color: $verde;
+    color: white;
+    border-radius: 100%;
+    padding: 0.25rem 0.75rem;
+    font-weight: 800;
+    font-size: 1rem;
+  }
+}
+
+.boton-aniadir {
+  background-color: $verde;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.boton-comprar {
+  @extend .boton-aniadir;
+  background-color: $amarillo;
+}
+/*------------END DETAIL-------------*/
+
 /*--------------FOOTER-----------*/
 footer {
   background-color: $gris;
