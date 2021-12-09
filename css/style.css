@@ -42,7 +42,11 @@ main h1 {
   font-weight: bold; }
 
 .cont-img-comprar:hover .boton-compra-rapida {
+  z-index: 1;
   opacity: 1; }
+
+.cont-img-comprar:hover .card-img-top {
+  filter: blur(1.5px); }
 
 /*------------END CARDS-------------*/
 /*--------------FOOTER-----------*/
