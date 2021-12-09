@@ -1,7 +1,4 @@
-import { renderCards }  from './renderCards.js'
-
 let remerasContainer = document.getElementById('remerasContainer')
-
 
 let listaRemeras =[
     {   

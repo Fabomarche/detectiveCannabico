@@ -1,4 +1,4 @@
-const verDetalle = (itemId, list) => {
+const detail = (itemId, list) => {
     let item = list.find(el => el.id === itemId)
     return item
 }

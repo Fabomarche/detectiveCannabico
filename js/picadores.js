@@ -1,5 +1,3 @@
-import  {renderCards}   from './renderCards.js'
-
 let picadoresContainer = document.getElementById('picadoresContainer')
 
 let listaPicadores = [
@@ -20,4 +18,5 @@ let listaPicadores = [
     }
 ]
 
+console.log(renderCards(listaPicadores))
 picadoresContainer.innerHTML = renderCards(listaPicadores)
