@@ -1,12 +1,16 @@
 let remerasDetail = document.getElementById('remerasDetail');
 let catalogoContainer = document.getElementById('catalogoContainer');
 let detailContainer = document.getElementById('detailContainer');
+let add = document.getElementById('add')
+let subtract = document.getElementById('subtract')
+let counter = document.getElementById('counter')
 
 detailContainer.style = "display:none"
-
+let product = {}
 const detail = (itemId) =>{
     let item = listaRemeras.find(el => el.id === itemId)
-    console.log(item)
+    product = item
+    console.log(product)
     let render = `
         <div class="container d-flex my-5">
             <div class="w-100">
@@ -33,7 +37,8 @@ const detail = (itemId) =>{
                     <div class="mt-3">
                         <p>Cantidad</p>
                         <div class="contador d-flex">
-                            <button class="btn rounded-circle">+</button><p id="contadorNumero" class="px-3">0</p><button class="btn rounded-circle">-</button>
+                            <button id="add" class="btn rounded-circle" onclick="addCount()" type='button'>+</button><p id="counter" class="px-3">${item.inCart}</p><button id="subtract" onclick="
+                            subtractCount()" class="btn rounded-circle" type='button'>-</button>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -48,3 +53,16 @@ const detail = (itemId) =>{
     detailContainer.style = "display:block"
     remerasDetail.innerHTML = render
 }
+
+// const addCount = () => {
+//     product.inCart += 1
+//     console.log(product)
+//     detail(product)
+// }
+
+// const subtractCount = () => {
+//     if(count > 0) {
+//         product.inCart -= 1
+//         detail(product)
+//     } 
+// }
