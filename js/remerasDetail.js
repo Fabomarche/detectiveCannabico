@@ -26,14 +26,14 @@ const detail = (itemId) =>{
                     </select>
                     <label class="mt-2">Color</label>
                     <select class="form-select mt-2" aria-label="Default select example">
-                        <option selected>blanco</option>
-                        <option value="1">nedro</option>
-                        <option value="2">gris</option>
+                        <option selected>Blanco</option>
+                        <option value="1">Negro</option>
+                        <option value="2">Gris</option>
                     </select>
                     <div class="mt-3">
                         <p>Cantidad</p>
                         <div class="contador d-flex">
-                            <button class="btn">+</button><p id="contadorNumero" class="px-3">0</p><button class="btn">-</button>
+                            <button class="btn rounded-circle">+</button><p id="contadorNumero" class="px-3">0</p><button class="btn rounded-circle">-</button>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">

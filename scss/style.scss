@@ -39,6 +39,17 @@ main {
     font-weight: 700;
     color: $verde;
   }
+
+  .conocenos-btn {
+    @extend .boton-comprar;
+    font-size: 0.75rem;
+    border-radius: 12px;
+    padding: 0.75rem 2rem;
+  }
+}
+
+.card-blog {
+  width: 40%;
 }
 
 /*------------CARDS-------------*/
@@ -46,6 +57,11 @@ main {
 .card-title {
   color: $verde;
   text-transform: uppercase;
+  font-family: $font-title;
+  font-weight: 600;
+}
+
+.card-title-blog {
   font-family: $font-title;
   font-weight: 600;
 }
