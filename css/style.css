@@ -19,6 +19,10 @@
   background-color: #4e9339;
   color: white; }
 
+.form-control:focus {
+  border-color: #4e9339;
+  box-shadow: 0 0 8px #4e9339; }
+
 /*--------------END HEADER-----------*/
 main h1 {
   font-family: "Poppins", sans-serif;

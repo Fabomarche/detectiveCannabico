@@ -31,6 +31,11 @@ $font-text: "Open Sans", sans-serif;
   color: white;
 }
 
+.form-control:focus {
+  border-color: $verde;
+  box-shadow: 0 0 8px $verde;
+}
+
 /*--------------END HEADER-----------*/
 
 main {
