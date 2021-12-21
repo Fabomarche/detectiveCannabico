@@ -94,7 +94,7 @@ main {
 
 /*------------END CARDS-------------*/
 
-/*------------DETAIL-------------*/
+/*------------MODAL DETAIL-------------*/
 .detail-title {
   color: $verde;
   text-transform: uppercase;
@@ -147,7 +147,7 @@ main {
   @extend .boton-aniadir;
   background-color: $amarillo;
 }
-/*------------END DETAIL-------------*/
+/*------------END MODAL DETAIL-------------*/
 
 /*--------------FOOTER-----------*/
 footer {

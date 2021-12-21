@@ -4,8 +4,12 @@ let detailContainer = document.getElementById('detailContainer');
 let add = document.getElementById('add')
 let subtract = document.getElementById('subtract')
 let counter = document.getElementById('counter')
+let itemTitle = document.getElementById('itemTitle')
+let itemPrice = document.getElementById('itemPrice')
+let itemDescription = document.getElementById('itemDescription')
+let itemImage = document.getElementById('itemImage')
 
-detailContainer.style = "display:none"
+// detailContainer.style = "display:none"
 let product = {}
 const detail = (itemId) =>{
     let item = listaRemeras.find(el => el.id === itemId)
@@ -49,9 +53,14 @@ const detail = (itemId) =>{
             </div>
         </div>
     `
-    catalogoContainer.style = "display:none"
-    detailContainer.style = "display:block"
-    remerasDetail.innerHTML = render
+    itemTitle.innerHTML = `${item.title}`
+    itemPrice.innerHTML = `$${item.price}`
+    itemDescription.innerHTML = `${item.description}`
+    itemImage.innerHTML =`<img src="${item.imgURL}" class="img-fluid">`
+    counter.innerHTML = `${item.inCart}`
+    // catalogoContainer.style = "display:none"
+    // detailContainer.style = "display:block"
+    // remerasDetail.innerHTML = render
 }
 
 // const addCount = () => {
