@@ -65,7 +65,7 @@ main .conocenos-btn {
   filter: blur(1.5px); }
 
 /*------------END CARDS-------------*/
-/*------------DETAIL-------------*/
+/*------------MODAL DETAIL-------------*/
 .detail-title {
   color: #4e9339;
   text-transform: uppercase;
@@ -112,7 +112,7 @@ main .conocenos-btn {
 .boton-comprar, main .conocenos-btn {
   background-color: #fedf3f; }
 
-/*------------END DETAIL-------------*/
+/*------------END MODAL DETAIL-------------*/
 /*--------------FOOTER-----------*/
 footer {
   background-color: #e1e1cd; }
