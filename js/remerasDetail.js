@@ -10,40 +10,30 @@ let product = {}
 const detail = (itemId) =>{
     let item = listaRemeras.find(el => el.id === itemId)
     product = item
-    console.log(product)
     let render = `
         <div class="container d-flex my-5">
             <div class="w-100">
-                <img src="${item.imgURL}" class="img-fluid">
+                <img src="${product.imgURL}" class="img-fluid">
             </div>
             <div class="container px-5">
-                <h3 class="detail-title">${item.title}</h3>
-                <p class="detail-price">$${item.price}</p>
-                <p>${item.description}</p>
-                <a href="#" class="link-detalles">Ver detalles del producto ></a>
-                <form class="detail-form">
-                    <label class="mt-2">Talle</label>
-                    <select class="form-select mt-2" aria-label="Default select example">
-                        <option selected>S</option>
-                        <option value="1">M</option>
-                        <option value="2">L</option>
-                    </select>
-                    <label class="mt-2">Color</label>
-                    <select class="form-select mt-2" aria-label="Default select example">
-                        <option selected>Blanco</option>
-                        <option value="1">Negro</option>
-                        <option value="2">Gris</option>
-                    </select>
+                <h3 class="detail-title">${product.description}</h3>
+                <p class="detail-price">$${product.price}</p>
+                <p></p>
+                <form class="detail-form" action="https://api-server-node.cf/checkout" method="POST" class="as-producttile-info" style="float:left;min-height: 168px;">
+                    <br>
+                   
                     <div class="mt-3">
-                        <p>Cantidad</p>
+                       <h4><b>Cantidad</b></h4>
                         <div class="contador d-flex">
-                            <button id="add" class="btn rounded-circle" onclick="addCount()" type='button'>+</button><p id="counter" class="px-3">${item.inCart}</p><button id="subtract" onclick="
-                            subtractCount()" class="btn rounded-circle" type='button'>-</button>
+                        <input id="description" type="hidden" name="description" value="${product.description}">
+                        <input id="price" type="hidden" name="price" value="${product.price}">
+                        <input id="quantity" type="number" name="quantity" value="${product.quantity}">
                         </div>
                     </div>
+                    <br>
                     <div class="d-flex justify-content-center">
                         <button class="boton-aniadir btn me-5 p-3 w-100">Añadir al carrito</button>
-                        <button class="boton-comprar btn p-3 w-100">Comprar ahora</button>
+                        <button type="submit" class="boton-comprar btn p-3 w-100" onclick="pay()">Comprar ahora</button>
                     </div>
                 </form>
             </div>
@@ -53,16 +43,3 @@ const detail = (itemId) =>{
     detailContainer.style = "display:block"
     remerasDetail.innerHTML = render
 }
-
-// const addCount = () => {
-//     product.inCart += 1
-//     console.log(product)
-//     detail(product)
-// }
-
-// const subtractCount = () => {
-//     if(count > 0) {
-//         product.inCart -= 1
-//         detail(product)
-//     } 
-// }
